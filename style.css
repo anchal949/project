@@ -1,10 +1,10 @@
-div{height:670px;
+.up{height:700px;
 	width:100%;
 	background:linear-gradient(0deg,rgba(25,0,20,0.3),rgba(25,0,20,0.3)),url("b1.png")   ;
 	background-repeat:no-repeat; 
-background-size:cover;
+background-size:100%;
 }
-.but{
+.but1{
 	background-color: #555555;
 	border:none;
 	color:white;
@@ -12,17 +12,14 @@ background-size:cover;
 	font-size: 16px;
 	text-decoration: none;
 	cursor:pointer;
+	transform: translate(0px,0px);
+
+
 }
 .centre{display:block;
-margin-left:auto;
-margin-right:auto;
-margin-top:70px;
-width:50%;}
-.text{
-	dislay:block;
-	margin-top: 0px;
-	
-	margin-left:30%;
+width="50%";
+transform: translate(710px,180px);
+
   }
   .but2{
   	background-color:transparent;
@@ -33,13 +30,104 @@ width:50%;}
   	border-radius: 33px;
   	width:160px;
   	cursor:pointer;
-  transform: translate(-120px,-380px);
+  transform: translate(-55px,-220px);
+
   }
+  .but3{
+  	background-color: transparent;
+  	font-size: 16px;
+  	padding:12px 22px;
+
+  }
+
+  .fixed{position: fixed;}
+.d1{ height:280px;
+	background-color:white;
+
+ box-shadow: 2px 2px 8px 8px #888888;
+transform: translate(0px,50px);
+margin-left: 60px;
+margin-right: 60px;
+
+
+}
+.d2{   height:280px;
+	background-color:white;
+
+ box-shadow: 2px 2px 8px 8px #888888;
+transform: translate(0px,100px);
+margin-left: 60px;
+margin-right: 60px;
+}
+.im1{
+	transform: translate(1195px,-319px);
+
+}
+.im2{transform: translate(0px,-310px);
+
+}
+.im3{
+	transform: translate(1180px,-266px);
+}
+.d3{   height:280px;
+	background-color:white;
+
+ box-shadow: 2px 2px 8px 8px #888888;
+transform: translate(0px,150px);
+margin-left: 60px;
+margin-right: 60px;
+}
+  .p1{display:block;
+
+transform: translate(1240px,-90px);
+
+  }
+  
   	
 
   
   
 
   .pos {
-  	transform: translate(400px,-200px);
-  }
+  	transform: translate(500px,-40px);}
+  	.footer{
+  		margin-top: 400px;
+  	
+  	}
+
+  .last{
+  	background-color:purple;
+  	height: 40px;
+  	width:1680px;
+  	margin-top: 0px;
+  	text-align: center;
+  	padding-top: 12PX;
+}
+
+
+
+
+.but2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.but2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.but2:hover span {
+  padding-right: 25px;
+}
+
+.but2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
